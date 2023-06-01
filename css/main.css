@@ -1,0 +1,374 @@
+/*============ start variable==============*/
+:root {
+	--main-color: #10cab7;
+	--secondary-color: #2c4755;
+	--section-color: #f6f6f6;
+	--section-padding: 40px 0; 
+}
+/*============ send variable==============*/
+
+/*========== start global rules  =============*/
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Work Sans',sans-serif;
+}
+.container {
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+i {
+	color: var(--main-color);
+}
+h2 {
+	font-weight: 800;
+	text-transform: capitalize;
+}
+.special-heading {
+	text-align: center;
+	margin: 40px 0;
+}
+.special-heading h2 {
+	font-size: 100px;
+	letter-spacing: -5px;
+	margin: 20px 0;
+	color: #ebeced;
+}
+.special-heading p {
+		margin-top: -44px;
+		text-transform: capitalize;
+		font-size: 18px;
+		color: #797979;
+}
+/* =========================================== start header ======================================= */
+.main-header {
+	height: 100vh;
+	background: url(../img/mountain.jpg);
+	background-size: cover;
+	position: relative;
+}
+.main-header .navbar {
+	height: 10vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.main-header .navbar .links {
+	display: none;
+}
+.main-header .navbar .logo {
+	width: 80px;
+}
+.main-header .navbar .berger div{
+	height: 2px;
+	width: 30px;
+	background-color: #333;
+	margin-bottom: 6px;
+}
+.navbar .berger div:nth-child(2) {
+	width: 15px;
+}
+.main-header .special-title {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+ .main-header .special-title h1 {
+	font-weight: 800;
+	font-size: 10vh;
+	text-transform: capitalize;
+	color: var(--main-color);
+	margin: 0;
+ }
+.main-header .special-title p {
+	text-transform: capitalize;
+	font-weight: 500;
+	font-size: 20px;
+}
+/* =========================================== end header ======================================= */
+/* =========================================== start feature ======================================= */
+.feature {
+	background-color: var(--section-color);
+	padding: var(--section-padding);
+}
+.feature .row-grid {
+	margin-left: -15px;
+	margin-right: -15px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
+}
+.feat {
+	text-align: center;
+	padding: 50px 10px;
+}
+.feat p {
+	color: #7a7c7e;
+	font-size: 15px;
+	line-height: 1.9;
+}
+/* =========================================== end feature ======================================= */
+/* ========================================== start services ===================================== */
+.services {
+	padding: var(--section-padding);
+}
+.services .ser-parent {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
+	margin: 100px 0;
+}
+.ser-parent .ser {
+	display: flex;
+}
+.ser-parent .ser i {
+	flex-basis: 60px;
+	margin-top: 20px;
+}
+.ser-parent .ser .serv01 {
+	flex: 1;
+}
+.ser-parent .ser .serv01  h2 {
+	text-transform: capitalize;
+	font-weight: 600;
+}
+.ser-parent .ser .serv01 p {
+	font-weight: 300;
+	line-height: 1.6;
+}
+.ser-parent .bg-img {
+	background: linear-gradient(to right, #fff 75%, var(--secondary-color) 25%);
+	height: 100%;
+	position: relative;
+}
+.ser-parent .bg-img img {
+	width: 250px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+/* ========================================== end services ====================================== */
+/* ========================================== start portfolio ====================================== */
+.portfolio {
+	background-color: var(--section-color);
+	padding: var(--section-padding);
+}
+.portfolio-parent {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 30px;
+	margin-top: 90px;
+}
+.col-03 {
+	background-color: #fff;
+}
+.col-03 img {
+	width: 100%;
+}
+.col-03 .content {
+	padding: 20px;
+}
+.col-03 .content h3 {
+	text-transform: capitalize;
+	font-size: 20px;
+	font-weight: 600;
+
+}
+.col-03 .content p {
+	line-height: 1.7;
+	color: #5a5959;
+}
+/* ========================================== end portfolio ====================================== */
+/* ========================================== start about ========================================= */
+.about {
+	padding: var(--section-padding);
+}
+.about-info {
+	display: flex;
+}
+.about-info .col-2-img {
+	width: 40%;
+	position: relative;
+}
+.about-info .col-2-img img {
+	width: 250px;
+	margin-left: 20px;
+}
+.about-info .col-2-info {
+	width: 60%;
+}
+.about-info .image::after {
+	content: '';
+	width: 16%;
+	height: 120%;
+	background-color: #ebeced;
+	position: absolute;
+	left: 0;
+	top: -36px;
+	z-index: -1;
+}
+.about-info .image::before {
+	content: '';
+	border-left: 60px solid var(--main-color);
+	border-bottom: 60px solid var(--main-color);
+	height: 214px;
+	width: 80px;
+	position: absolute;
+	left: 234px;
+	top: -35px;
+	z-index: -1;
+}
+.col-2-info h4 {
+	font-weight: 600;
+	line-height: 1.8;
+	font-size: 18px;
+}
+.col-2-info p {
+	line-height: 1.8;
+	font-weight: 500;
+	color: #5a5959;
+}
+/* ========================================== end about ========================================== */
+/* ========================================== start contact======================================= */
+.contact {
+	padding: var(--section-padding);
+	background-color: var(--section-color);
+}
+.contact .contact-info {
+	text-align: center;
+	padding: 30px 0;
+}
+.contact-info h3 {
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+.contact-info h4 {
+	color: var(--main-color);
+	font-size: 40px;
+	margin: 0;
+}
+.contact-info p {
+	text-transform: capitalize;
+	font-size: 20px;
+	font-weight: 300;
+}
+.contact-info p span i {
+	margin-left: 5px;
+	color: var(--secondary-color);
+}
+/* ========================================== end contact ======================================== */
+/* ========================================== start footer ========================================*/
+.footer {
+	background-color: var(--secondary-color);
+	padding: 18px 0;
+}
+.footer .footer-info {
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 20px;
+	font-weight: 500;
+	color: #fff;
+}
+.footer-info span {
+	color: var(--main-color);
+}
+/* ========================================== end footer ========================================= */
+/* ========================================== media query ======================================= */
+@media (max-width: 575.98px) {
+
+	.container {
+		max-width: 310px;
+	}
+	.main-header .special-title h1 {
+		font-size: 8vh;
+	}
+	.special-heading h2 {
+		font-size: 80px;
+	}
+	.ser-parent .ser {
+		display: block;
+		text-align: center;
+	}
+	.ser-parent .bg-img img {
+		position: relative;
+		width: 100%;
+	}
+	.ser-parent .bg-img {
+		background: none;
+	}
+	.contact-info h4 {
+		font-size: 30px;
+	}
+	.contact-info p span {
+		display: block;
+		margin-top: 10px;
+	}
+	.about-info {
+		flex-direction: column;
+	}
+	.about-info .col-2-info,
+	.about-info .col-2-img {
+		width: 100%;
+	}
+	.about-info .image::before {
+		display: none;
+	}
+	.about-info .image::after {
+		display: none;
+	}
+	.about-info .col-2-img img {
+		width: 100%;
+		margin-left: 0;
+	}
+	.about-info h4,
+	.about-info p {
+		text-align: justify;
+	}
+}
+
+
+@media (max-width: 767.99px) {
+
+	.container {
+		max-width: 720px;
+	}
+		.ser-parent .ser {
+			display: block;
+			text-align: center;
+		}
+		
+		.ser-parent .bg-img img {
+			position: relative;
+			width: 100%;
+		}
+		
+		.ser-parent .bg-img {
+			background: none;
+		}
+}
+
+@media (min-width: 992px) {
+
+	.container {
+		max-width: 960px;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.container {
+		max-width: 1140px;
+	}
+}
